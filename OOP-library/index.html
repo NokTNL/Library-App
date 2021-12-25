@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Library</title>
+  </head>
+  <body>
+    <h1>My Library</h1>
+    <ol id="book-list">
+      <!-- <li class="book">
+        <ul>
+          <li class="book-title">${title}</li>
+          <li class="book-author">written by ${author}</li>
+          <li class="book-pages">${pages} pages</li>
+          <li class="book-read">
+            Status: ${readText}
+            <button>read</button>
+          </li>
+          <li class="remove-book"><button>Remove Book</button></li>
+        </ul>
+      </li> -->
+    </ol>
+
+    <div id="new-book-button"><button>New Book</button></div>
+    <form id="new-book-form" onsubmit="return false;">
+      <!-- tweak 'onsubmit' so that it won't reload the page -->
+      <h3>Add a new book!</h3>
+      <ul>
+        <li>
+          <label for="new-title">Title:</label>
+          <input type="text" id="new-title" name="title" />
+        </li>
+        <li>
+          <label for="new-author">Author:</label>
+          <input type="text" id="new-author" name="author" />
+        </li>
+        <li>
+          <label for="new-pages">No. of pages:</label>
+          <input type="text" id="new-pages" name="pages" />
+        </li>
+        <li>
+          <label for="new-read">Read</label>
+          <input type="checkbox" id="new-read" name="read" value="read" />
+        </li>
+      </ul>
+      <button id="add-book-botton">Add new book</button>
+      <!-- button in a form not set to type="button" is by default a submit button: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type -->
+    </form>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#book-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book {
+  box-sizing: border-box;
+  height: 200px;
+  width: 200px;
+  border: 1px solid grey;
+  margin: 10px;
+  padding: 10px;
+}
+
+.book ul li {
+  margin: 10px 5px;
+}
+
+.book-title {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.book-author {
+  font-style: italic;
+}
+
+.book-read {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0px !important;
+}
+.book-read button {
+  position: relative;
+  bottom: 2px;
+}
+
+#new-book-button {
+  margin: 10px auto;
+}
+
+#new-book-form {
+  display: none;
+  margin-bottom: 20px;
+}
+
+#new-book-form ul li {
+  margin: 8px auto;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
