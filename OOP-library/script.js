@@ -30,6 +30,7 @@ class Library {
     const book = new Book(properties);
     this.listOfBooks.push(book);
     this.renderList();
+    document.getElementById("new-book-form").style.display = "none"; // hide the form
   };
 
   removeBook = (event) => {
