@@ -1,10 +1,6 @@
-# Odin-Practice-Projects
+# Odin-Library
 
-## 1. Rock-Paper-Scissors
+[From this lesson](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/library)
 
-For practicing DOM manipulation. Play with the computer with a simple UI with buttons and prompts! Try it: https://noktnl.github.io/Odin-Practice-Projects/Rock-Paper-Scissors
-
-## 2. OOP-library
-
-A project to practice using the `class` syntax to organise JS code. It produces a library that you can add/remove books into and toggle their read status.
-Try it: https://noktnl.github.io/Odin-Practice-Projects/OOP-library/
+A project to practice using the `class` syntax to organise JS code. It produces a library that you can add/remove books into and toggle their read status.\
+Try it: https://noktnl.github.io/Odin-Practice-Projects/Odin-Library/
