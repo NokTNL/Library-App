@@ -13,7 +13,7 @@ A simple library app that you can add/remove books into and toggle their read st
 - Styled in plain *CSS* (flexbox wrap)
 
 ## Features to be added:
-- Use CSS grid for layout (flexbox wrap can't do centering very well)
+- Use CSS grid for layout (alternative to using flexbox wrap + centering)
 - Fancier styling!
 
 [Inspired by this Odin Project lesson](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/library).
