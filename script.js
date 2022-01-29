@@ -2,9 +2,9 @@
 
 class Book {
   constructor(properties = {}) {
-    // Alternative to this.XXX = XXX syntax.
-    Object.assign(this, properties); // Just copying all the properties: https://stackoverflow.com/questions/41486848/es6-class-constructor-shortcut-for-setting-instance-properties/41487016
-    // Fine-grain tuning on properties names can be done by object destructuring to the above
+    // Alternative to this.XXX = XXX syntax: https://stackoverflow.com/questions/41486848/es6-class-constructor-shortcut-for-setting-instance-properties/41487016
+    // Just copying all the properties:
+    Object.assign(this, properties);
     this.info = function () {
       console.log(this);
       return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`;
@@ -17,6 +17,7 @@ class Library {
     this.listOfBooks = [];
   }
 
+  // All functions are arrow type so `this` = the surrounding lexical environment = the Library instance
   // called by event listener, no need assign this = event trigerring element
   addBook = () => {
     const form = document.getElementById("new-book-form");
@@ -42,7 +43,7 @@ class Library {
   toggleReadStatus = (event) => {
     const index = event.target.closest(".book").dataset.arrayIndex;
     this.listOfBooks[index].read = !this.listOfBooks[index].read; // toggle read status
-    this.renderList(); /****** can upgrade to just changing that book */
+    this.renderList(); /****** to be upgraded: change to just changing that book */
   };
 
   renderList = () => {
